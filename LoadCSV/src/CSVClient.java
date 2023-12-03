@@ -19,7 +19,7 @@ public class CSVClient {
 
     private static void process() {
 
-        String csvFilePath = "C://Users/Asus/Downloads/country.csv";
+        String csvFilePath = System.getProperty("user.dir") + "/src/country.csv";
         int totalRecords = 0;
         try {
             totalRecords = countRecords(csvFilePath);
